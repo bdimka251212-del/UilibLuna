@@ -4526,7 +4526,7 @@ do
             Flag = Data.Flag or Data.flag or Library:NextFlag(),
             Items = Data.Items or Data.items or Data.Options or Data.options or { "One", "Two", "Three" },
             Default = Data.Default or Data.default or nil,
-            MaxSize = Data.MaxSize or Data.maxsize or 75,
+            MaxSize = Data.MaxSize or Data.maxsize or 150,
             Callback = Data.Callback or Data.callback or function() end,
             Multi = Data.Multi or Data.multi or false,
 
