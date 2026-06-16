@@ -4341,7 +4341,7 @@ do
                 Name = "\0",
                 BackgroundTransparency = 1,
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(1, 0, 0, 22),
+                Size = UDim2New(1, 0, 0, 28),
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })
@@ -4355,12 +4355,12 @@ do
                 Text = Slider.Name,
                 BackgroundTransparency = 1,
                 AnchorPoint = Vector2New(0, 0.5),
-                Position = UDim2New(0, 2, 0.5, 0),
-                Size = UDim2New(0.28, -4, 0, 14),
+                Position = UDim2New(0, 4, 0.5, 0),
+                Size = UDim2New(0.26, -6, 0, 16),
                 BorderSizePixel = 0,
                 TextXAlignment = Enum.TextXAlignment.Left,
                 TextTruncate = Enum.TextTruncate.AtEnd,
-                TextSize = 12,
+                TextSize = 13,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Text"]:AddToTheme({TextColor3 = "Text"})
 
@@ -4373,10 +4373,10 @@ do
                 Text = "",
                 AutoButtonColor = false,
                 AnchorPoint = Vector2New(0, 0.5),
-                Position = UDim2New(0.28, 2, 0.5, 0),
-                Size = UDim2New(0.72, -38, 0, 10),
+                Position = UDim2New(0.26, 4, 0.5, 0),
+                Size = UDim2New(0.74, -44, 0, 13),
                 BorderSizePixel = 0,
-                TextSize = 12,
+                TextSize = 13,
                 BackgroundColor3 = FromRGB(32, 38, 48)
             })  Items["RealSlider"]:AddToTheme({BackgroundColor3 = "Element"})
 
@@ -4404,16 +4404,16 @@ do
                 Name = "\0",
                 FontFace = PlexFont,
                 Active = false,
-                TextTransparency = 0.4,
+                TextTransparency = 0.3,
                 AnchorPoint = Vector2New(1, 0.5),
-                TextSize = 11,
-                Size = UDim2New(0, 34, 0, 14),
+                TextSize = 12,
+                Size = UDim2New(0, 38, 0, 16),
                 TextColor3 = FromRGB(255, 255, 255),
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "0",
                 Selectable = false,
                 BackgroundTransparency = 1,
-                Position = UDim2New(1, -2, 0.5, 0),
+                Position = UDim2New(1, -4, 0.5, 0),
                 BorderSizePixel = 0,
                 ClearTextOnFocus = false,
                 TextXAlignment = Enum.TextXAlignment.Right,
