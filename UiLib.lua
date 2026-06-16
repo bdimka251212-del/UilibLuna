@@ -3636,10 +3636,14 @@ do
 
             Window.IsOpen = Bool
 
-            Debounce = true 
+            Debounce = true
 
-            if Window.IsOpen then 
-                Items["MainFrame"].Instance.Visible = true 
+            if Window.IsOpen then
+                Items["MainFrame"].Instance.Visible = true
+                UserInputService.MouseIconEnabled = true
+                UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+            else
+                UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
             end
 
             local Descendants = Items["MainFrame"].Instance:GetDescendants()
