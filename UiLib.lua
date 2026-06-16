@@ -4334,12 +4334,14 @@ do
         }
 
         local Items = { } do 
+            local PlexFont = Font.fromName("BuilderSansBold")
+
             Items["Slider"] = Instances:Create("Frame", {
                 Parent = Slider.Section.Items["Content"].Instance,
                 Name = "\0",
                 BackgroundTransparency = 1,
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(1, 0, 0, 20),
+                Size = UDim2New(1, 0, 0, 22),
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })
@@ -4347,14 +4349,14 @@ do
             Items["Text"] = Instances:Create("TextLabel", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
-                FontFace = Library.Font,
+                FontFace = PlexFont,
                 TextColor3 = FromRGB(255, 255, 255),
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = Slider.Name,
                 BackgroundTransparency = 1,
                 AnchorPoint = Vector2New(0, 0.5),
                 Position = UDim2New(0, 2, 0.5, 0),
-                Size = UDim2New(0.36, -4, 0, 14),
+                Size = UDim2New(0.28, -4, 0, 14),
                 BorderSizePixel = 0,
                 TextXAlignment = Enum.TextXAlignment.Left,
                 TextTruncate = Enum.TextTruncate.AtEnd,
@@ -4365,14 +4367,14 @@ do
             Items["RealSlider"] = Instances:Create("TextButton", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
-                FontFace = Library.Font,
+                FontFace = PlexFont,
                 TextColor3 = FromRGB(0, 0, 0),
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "",
                 AutoButtonColor = false,
                 AnchorPoint = Vector2New(0, 0.5),
-                Position = UDim2New(0.36, 2, 0.5, 0),
-                Size = UDim2New(0.64, -36, 0, 8),
+                Position = UDim2New(0.28, 2, 0.5, 0),
+                Size = UDim2New(0.72, -38, 0, 10),
                 BorderSizePixel = 0,
                 TextSize = 12,
                 BackgroundColor3 = FromRGB(32, 38, 48)
@@ -4400,12 +4402,12 @@ do
             Items["Value"] = Instances:Create("TextBox", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
-                FontFace = Library.Font,
+                FontFace = PlexFont,
                 Active = false,
                 TextTransparency = 0.4,
                 AnchorPoint = Vector2New(1, 0.5),
                 TextSize = 11,
-                Size = UDim2New(0, 30, 0, 14),
+                Size = UDim2New(0, 34, 0, 14),
                 TextColor3 = FromRGB(255, 255, 255),
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "0",
