@@ -4339,11 +4339,11 @@ do
                 Name = "\0",
                 BackgroundTransparency = 1,
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(1, 0, 0, 35),
+                Size = UDim2New(1, 0, 0, 20),
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })
-            
+
             Items["Text"] = Instances:Create("TextLabel", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
@@ -4352,13 +4352,16 @@ do
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = Slider.Name,
                 BackgroundTransparency = 1,
-                Size = UDim2New(0, 0, 0, 15),
+                AnchorPoint = Vector2New(0, 0.5),
+                Position = UDim2New(0, 2, 0.5, 0),
+                Size = UDim2New(0.36, -4, 0, 14),
                 BorderSizePixel = 0,
-                AutomaticSize = Enum.AutomaticSize.X,
-                TextSize = 14,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                TextTruncate = Enum.TextTruncate.AtEnd,
+                TextSize = 12,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Text"]:AddToTheme({TextColor3 = "Text"})
-            
+
             Items["RealSlider"] = Instances:Create("TextButton", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
@@ -4367,14 +4370,14 @@ do
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "",
                 AutoButtonColor = false,
-                AnchorPoint = Vector2New(0, 1),
-                Position = UDim2New(0, 0, 1, 0),
-                Size = UDim2New(1, 0, 0, 12),
+                AnchorPoint = Vector2New(0, 0.5),
+                Position = UDim2New(0.36, 2, 0.5, 0),
+                Size = UDim2New(0.64, -36, 0, 8),
                 BorderSizePixel = 0,
-                TextSize = 14,
+                TextSize = 12,
                 BackgroundColor3 = FromRGB(32, 38, 48)
             })  Items["RealSlider"]:AddToTheme({BackgroundColor3 = "Element"})
-            
+
             Instances:Create("UIStroke", {
                 Parent = Items["RealSlider"].Instance,
                 Name = "\0",
@@ -4382,43 +4385,43 @@ do
                 LineJoinMode = Enum.LineJoinMode.Miter,
                 ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             }):AddToTheme({Color = "Border"})
-            
+
             Items["Accent"] = Instances:Create("Frame", {
                 Parent = Items["RealSlider"].Instance,
                 Name = "\0",
-                Position = UDim2New(0, 1, 0, 1),
+                Position = UDim2New(0, 0, 0, 0),
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(0.5, 0, 1, -2),
+                Size = UDim2New(0.5, 0, 1, 0),
                 ZIndex = 2,
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(94, 213, 213)
             })  Items["Accent"]:AddToTheme({BackgroundColor3 = "Accent"})
-            
+
             Items["Value"] = Instances:Create("TextBox", {
                 Parent = Items["Slider"].Instance,
                 Name = "\0",
                 FontFace = Library.Font,
                 Active = false,
-                TextTransparency = 0.5,
-                AnchorPoint = Vector2New(1, 0),
-                TextSize = 14,
-                Size = UDim2New(0, 0, 0, 15),
+                TextTransparency = 0.4,
+                AnchorPoint = Vector2New(1, 0.5),
+                TextSize = 11,
+                Size = UDim2New(0, 30, 0, 14),
                 TextColor3 = FromRGB(255, 255, 255),
                 BorderColor3 = FromRGB(0, 0, 0),
-                Text = "50s",
+                Text = "0",
                 Selectable = false,
                 BackgroundTransparency = 1,
-                Position = UDim2New(1, 0, 0, 0),
+                Position = UDim2New(1, -2, 0.5, 0),
                 BorderSizePixel = 0,
                 ClearTextOnFocus = false,
-                AutomaticSize = Enum.AutomaticSize.X,
+                TextXAlignment = Enum.TextXAlignment.Right,
                 BackgroundColor3 = FromRGB(255, 255, 255)
-            })  Items["Value"]:AddToTheme({TextColor3 = "Text"})      
+            })  Items["Value"]:AddToTheme({TextColor3 = "Text"})
 
             Items["RealSlider"]:OnHover(function()
                 Items["RealSlider"]:Tween(nil, {BackgroundColor3 = Library:GetLighterColor(Library.Theme.Element, 1.35)})
             end)
-            
+
             Items["RealSlider"]:OnHoverLeave(function()
                 Items["RealSlider"]:Tween(nil, {BackgroundColor3 = Library.Theme.Element})
             end)
