@@ -4341,7 +4341,7 @@ do
                 Name = "\0",
                 BackgroundTransparency = 1,
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(1, 0, 0, 28),
+                Size = UDim2New(1, 0, 0, 20),
                 BorderSizePixel = 0,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })
@@ -4356,11 +4356,11 @@ do
                 BackgroundTransparency = 1,
                 AnchorPoint = Vector2New(0, 0.5),
                 Position = UDim2New(0, 4, 0.5, 0),
-                Size = UDim2New(0.26, -6, 0, 16),
+                Size = UDim2New(0.26, -6, 0, 13),
                 BorderSizePixel = 0,
                 TextXAlignment = Enum.TextXAlignment.Left,
                 TextTruncate = Enum.TextTruncate.AtEnd,
-                TextSize = 13,
+                TextSize = 12,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Text"]:AddToTheme({TextColor3 = "Text"})
 
@@ -4374,7 +4374,7 @@ do
                 AutoButtonColor = false,
                 AnchorPoint = Vector2New(0, 0.5),
                 Position = UDim2New(0.26, 4, 0.5, 0),
-                Size = UDim2New(0.74, -44, 0, 13),
+                Size = UDim2New(0.74, -44, 0, 9),
                 BorderSizePixel = 0,
                 TextSize = 13,
                 BackgroundColor3 = FromRGB(32, 38, 48)
@@ -4407,7 +4407,7 @@ do
                 TextTransparency = 0.3,
                 AnchorPoint = Vector2New(1, 0.5),
                 TextSize = 12,
-                Size = UDim2New(0, 38, 0, 16),
+                Size = UDim2New(0, 38, 0, 13),
                 TextColor3 = FromRGB(255, 255, 255),
                 BorderColor3 = FromRGB(0, 0, 0),
                 Text = "0",
